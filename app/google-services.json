@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "185110369391",
+    "firebase_url": "https://liveauction-596b1.firebaseio.com",
+    "project_id": "liveauction-596b1",
+    "storage_bucket": "liveauction-596b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185110369391:android:b61a3972e95dce80",
+        "android_client_info": {
+          "package_name": "chanboss.liveauction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185110369391-uefe3rnmqk3kajknervq09ccmgkqvj0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chanboss.liveauction",
+            "certificate_hash": "f5b43676932c598262ab3e22d2dfd0b97d7b6d1d"
+          }
+        },
+        {
+          "client_id": "185110369391-ele58qjqrkobabt9o3t1v773snodla67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoT0NNBbu2GVwjEvqbrrlckwadvoWihA4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185110369391-ele58qjqrkobabt9o3t1v773snodla67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

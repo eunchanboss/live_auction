@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#d3d3d3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bb"
+                android:gravity="center"
+                android:text="경매 물품 등록"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완료"
+                android:background="#00ff0000"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontb"
+                android:layout_gravity="right"
+                />
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="저장"
+                android:background="#00ff0000"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontb"
+                android:layout_gravity="right"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="8dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+
+        <EditText
+            android:id="@+id/pdTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/edit_text_bolder3"
+            android:paddingStart="15sp"
+            android:paddingEnd="10sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/fontr"
+            android:hint="상품 명" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+        <EditText
+            android:id="@+id/pdContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textSize="15dp"
+            android:background="@drawable/edit_text_bolder3"
+            android:paddingStart="15sp"
+            android:paddingEnd="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/fontr"
+            android:lines="10"
+            android:hint="상세 설명" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <EditText
+            android:id="@+id/startPrice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_bolder3"
+            android:paddingStart="15sp"
+            android:paddingEnd="10sp"
+            android:fontFamily="@font/fontr"
+            android:hint="시작 금액"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:id="@+id/nowBuyPrice"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/edit_text_bolder3"
+            android:paddingStart="15sp"
+            android:paddingEnd="10sp"
+            android:fontFamily="@font/fontr"
+            android:hint="바로 구매 금액"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_bolder3"
+        android:paddingStart="15sp"
+        android:paddingEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="@font/fontr"
+            android:gravity="center"
+            android:text="경매 기간"
+            android:textSize="15dp"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/term"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:paddingStart="4sp"
+            android:paddingEnd="4sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:context=".notice.PostMerge">
+
+        <ImageView
+            android:id="@+id/postImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/plus"
+            android:layout_gravity="center"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:clipToPadding="false" />
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#d3d3d3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bb"
+                android:gravity="center"
+                android:text="실시간 경매방 생성"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완료"
+                android:background="#00ff0000"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontb"
+                android:layout_gravity="right"
+                />
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="저장"
+                android:background="#00ff0000"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontb"
+                android:layout_gravity="right"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="8dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+
+        <EditText
+            android:id="@+id/pdTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/edit_text_bolder3"
+            android:paddingStart="15sp"
+            android:paddingEnd="10sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/fontr"
+            android:hint="상품 명" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+        <EditText
+            android:id="@+id/pdContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textSize="15dp"
+            android:background="@drawable/edit_text_bolder3"
+            android:paddingStart="15sp"
+            android:paddingEnd="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/fontr"
+            android:lines="10"
+            android:hint="상세 설명" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <EditText
+            android:id="@+id/startPrice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_bolder3"
+            android:paddingStart="15sp"
+            android:paddingEnd="10sp"
+            android:fontFamily="@font/fontr"
+            android:hint="시작 금액"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

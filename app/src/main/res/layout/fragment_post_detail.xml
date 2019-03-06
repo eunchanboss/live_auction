@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/lastPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontb"
+            android:text="원"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/lastPriceTV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lastPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/fontb"
+            android:text="경매 진행 금액"
+            android:textSize="20sp"
+            android:textColor="#ff0000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/fontr"
+            android:text="시간"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lastPriceUserTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/fontr"
+            android:textSize="12sp"
+            android:text="마지막 입찰자"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastPriceTV" />
+
+        <TextView
+            android:id="@+id/pdTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontr"
+            android:text="상품명이 들어갈 자리"
+            android:layout_marginTop="8sp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/lastPriceTV"
+            app:layout_constraintTop_toBottomOf="@+id/lastPriceUserTV" />
+
+        <TextView
+            android:id="@+id/pdContentsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/fontb"
+            android:text="상품설명"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/pdTitleTV"
+            app:layout_constraintTop_toBottomOf="@+id/pdTitleTV" />
+
+        <TextView
+            android:id="@+id/pdContentsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontr"
+            android:text="텍스트 설명이 들어갈 예정"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdContentsText" />
+
+        <TextView
+            android:id="@+id/pdNowBuyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/fontb"
+            android:text="바로 구매가"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/pdContentsText"
+            app:layout_constraintTop_toBottomOf="@+id/pdContentsTV" />
+
+        <TextView
+            android:id="@+id/pdNowBuyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/fontr"
+            android:text="10,000"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdNowBuyText" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/fontr"
+            android:text="원"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pdNowBuyTV"
+            app:layout_constraintStart_toEndOf="@+id/pdNowBuyTV"
+            app:layout_constraintTop_toTopOf="@+id/pdNowBuyTV" />
+
+        <Button
+            android:id="@+id/nowBuyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:text="바로구매"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pdNowBuyTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pdNowBuyText" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontb"
+            android:text="판매자 정보"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/userImgIV"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/fontr"
+            android:textSize="16dp"
+            android:text="사용자명"
+            app:layout_constraintBottom_toBottomOf="@+id/userImgIV"
+            app:layout_constraintStart_toEndOf="@+id/userImgIV"
+            app:layout_constraintTop_toTopOf="@+id/userImgIV" />
+
+        <TextView
+            android:id="@+id/userGradeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/fontr"
+            android:text="사용자등급"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/userNameTV"
+            app:layout_constraintStart_toEndOf="@+id/userImgIV" />
+
+        <Button
+            android:id="@+id/followBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rect_white"
+            android:fontFamily="@font/fontr"
+            android:text="+팔로우"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/userImgIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/userImgIV" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bidLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <EditText
+            android:id="@+id/priceInputET"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/rect_white1"
+            android:inputType="number"
+            android:paddingStart="8sp"
+            android:paddingLeft="8sp"
+            android:paddingEnd="8sp"
+            android:paddingRight="8sp"
+            android:hint="입찰가를 입력하세요."
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/bidBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/fontr"
+            android:text="입찰"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/buyMsgBtn"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:text="판매자와 채팅"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/cellMsgBtn"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:text="구매자와 채팅"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+
+

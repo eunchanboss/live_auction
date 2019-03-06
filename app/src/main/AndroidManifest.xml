@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="chanboss.liveauction">
+
+
+    <!-- 권한 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data tools:replace="android:value" android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name=".LodingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--로그인-->
+        <activity android:name=".login.Login" />
+        <activity android:name=".login.SignUp"/>
+        <!-- 페이스북 로그인 -->
+        <activity android:name="com.facebook.FacebookActivity" android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" />
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter> <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!--프로필-->
+        <activity android:name=".profile.ProfileMarge" android:exported="true" />
+        <activity android:name=".profile.ProfileDetail" />
+
+        <!--메인화면-->
+        <activity android:name=".main.Post" />
+
+        <!--글쓰기 -->
+        <activity android:name=".notice.PostMerge" />
+
+        <!--채팅 -->
+        <activity android:name=".chatting.chatin.ChatInList" />
+        <service android:name=".service.ChatService"/>
+        <!--test -->
+        <activity android:name=".notice.PostDetail" >
+
+        </activity>
+        <activity android:name="videortc.CallActivity" />
+        <activity android:name="videortc.ReceptionActivity" />
+        <activity android:name=".streaming.StreamRoomAdd" />
+
+        <activity android:name="io.antmedia.android.liveVideoBroadcaster.LiveVideoBroadcasterActivity"
+            android:theme="@style/AppThemeDark"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity android:name="io.antmedia.android.liveVideoPlayer.LiveVideoPlayerActivity"
+            android:theme="@style/AppThemeDark"
+            />
+
+        <service android:name="io.antmedia.android.broadcaster.LiveVideoBroadcaster" />
+
+    </application>
+
+</manifest>

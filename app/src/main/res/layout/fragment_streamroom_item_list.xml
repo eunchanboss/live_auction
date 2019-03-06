@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_bolder1"
+    android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/listItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="등록자명"
+            android:textSize="16dp"
+            android:fontFamily="@font/fontr"
+            app:layout_constraintBottom_toBottomOf="@+id/userImg"
+            app:layout_constraintStart_toEndOf="@+id/userImg"
+            app:layout_constraintTop_toTopOf="@+id/userImg" />
+
+        <TextView
+            android:id="@+id/liveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontb"
+            android:padding="4dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:text="방송 제목"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImg" />
+
+        <TextView
+            android:id="@+id/liveStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/fontb"
+            android:padding="4dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:text="상태"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImg" />
+
+        <TextView
+            android:id="@+id/auctionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pdImg"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/liveName" />
+
+
+        <TextView
+            android:id="@+id/pdNowPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/fontr"
+            android:text="현재가격"
+            android:textColor="#ff0000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pdNowPricett"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pdNowPricett" />
+
+        <TextView
+            android:id="@+id/pdNowPricett"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/fontr"
+            android:gravity="center"
+            android:text="시작 가격 : "
+            android:textColor="#ff0000"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userName"
+            app:layout_constraintEnd_toStartOf="@+id/pdNowPrice"
+            app:layout_constraintTop_toTopOf="@+id/userName" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>

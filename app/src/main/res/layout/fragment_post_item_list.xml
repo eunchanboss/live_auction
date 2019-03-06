@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_bolder1"
+    android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/listItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="등록자명"
+            android:textSize="16dp"
+            android:fontFamily="@font/fontr"
+            app:layout_constraintBottom_toBottomOf="@+id/userImg"
+            app:layout_constraintStart_toEndOf="@+id/userImg"
+            app:layout_constraintTop_toTopOf="@+id/userImg" />
+
+
+
+        <TextView
+            android:id="@+id/auctionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/pdImg"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImg" />
+
+
+        <TextView
+            android:id="@+id/pdTitlett"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontr"
+            android:text="상품명"
+            app:layout_constraintEnd_toEndOf="@+id/pdStartPricett"
+            app:layout_constraintStart_toStartOf="@+id/pdStartPricett"
+            app:layout_constraintTop_toBottomOf="@+id/userImg" />
+
+        <TextView
+            android:id="@+id/pdTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:fontFamily="@font/fontb"
+            android:text="상품명"
+            app:layout_constraintBottom_toBottomOf="@+id/pdTitlett"
+            app:layout_constraintEnd_toEndOf="@+id/pdNowBuy"
+            app:layout_constraintStart_toStartOf="@+id/pdNowBuy"
+            app:layout_constraintTop_toTopOf="@+id/pdTitlett" />
+
+        <TextView
+            android:id="@+id/pdStartPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:fontFamily="@font/fontr"
+            android:text="시작가격"
+            app:layout_constraintBottom_toBottomOf="@+id/pdStartPricett"
+            app:layout_constraintEnd_toEndOf="@+id/pdNowBuy"
+            app:layout_constraintStart_toStartOf="@+id/pdNowBuy"
+            app:layout_constraintTop_toTopOf="@+id/pdStartPricett" />
+
+        <TextView
+            android:id="@+id/pdStartPricett"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontr"
+            android:text="시작가격"
+            app:layout_constraintStart_toEndOf="@+id/pdImg"
+            app:layout_constraintTop_toBottomOf="@+id/pdTitlett" />
+
+        <TextView
+            android:id="@+id/pdNowPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontr"
+            android:text="현재가격"
+            android:textSize="17sp"
+            android:textColor="#ff0000"
+            app:layout_constraintBottom_toBottomOf="@+id/pdNowPricett"
+            app:layout_constraintEnd_toEndOf="@+id/pdNowBuy"
+            app:layout_constraintStart_toStartOf="@+id/pdNowBuy"
+            app:layout_constraintTop_toTopOf="@+id/pdNowPricett" />
+
+        <TextView
+            android:id="@+id/pdNowBuyT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontr"
+            android:text="바로구매 : "
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/pdImg"
+            app:layout_constraintTop_toBottomOf="@+id/pdStartPricett" />
+
+        <TextView
+            android:id="@+id/pdNowPricett"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/fontr"
+            android:gravity="center"
+            android:text="현재 가격 : "
+            android:layout_marginBottom="8dp"
+            android:textColor="#ff0000"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/pdImg"
+            app:layout_constraintStart_toEndOf="@+id/pdImg" />
+
+        <TextView
+            android:id="@+id/pdNowBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/fontb"
+            android:gravity="center"
+            android:text="50,000"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/pdNowBuyT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pdNowBuyT"
+            app:layout_constraintTop_toTopOf="@+id/pdNowBuyT" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="남은시간"
+            android:textColor="#ff0000"
+            android:fontFamily="@font/fontb"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/userImg" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>

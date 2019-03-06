@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/reciverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reciverMsgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rect_white1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:fontFamily="@font/fontr"
+            android:baselineAligned="false"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/reciverImgIV" />
+
+        <ImageView
+            android:id="@+id/reciverImgIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/reciverImgMsgIV"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            android:background="@null"
+            app:layout_constraintStart_toEndOf="@+id/reciverImgIV"
+            app:layout_constraintTop_toBottomOf="@+id/reciverNmTV" />
+        <TextView
+            android:id="@+id/reciverDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="bottom"
+            android:text="TextView"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/reciverMsgTV" />
+
+        <TextView
+            android:id="@+id/reciverNmTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fontb"
+            android:gravity="top"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/reciverImgIV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/senderLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/senderMsgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="6sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rect_white"
+            android:baselineAligned="false"
+            android:breakStrategy="balanced"
+            android:fontFamily="@font/fontr"
+            android:gravity="left"
+            android:paddingStart="12dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="4dp"
+            android:text="TextView"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/senderImgMsgIV"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/senderDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="bottom"
+            android:text="123"
+            android:layout_marginStart="8dp"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/senderMsgTV"
+            app:layout_constraintEnd_toStartOf="@+id/senderMsgTV" />
+
+        <TextView
+            android:id="@+id/checkYnTv"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="bottom"
+            android:visibility="gone"
+            android:text="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/senderDateTV"
+            app:layout_constraintEnd_toStartOf="@+id/senderMsgTV"
+            app:layout_constraintTop_toTopOf="@+id/senderMsgTV" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
