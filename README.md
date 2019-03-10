@@ -10,30 +10,10 @@
 
 ## 목차
 
-- [핵심기능](#핵심기능)
 - [사용기술](#사용기술)
+- [핵심기능](#핵심기능)
 - [관련 오픈소스](#관련-오픈소스)
 - [참고사항](#참고사항)
-
-
-## 핵심기능
-
-소셜로그인          |  실시간경매
-:-------------------------:|:-------------------------: 
-![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/social_login.gif)  |  ![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/post.gif)
-
- 채팅          |  
-:-------------------------:|
-![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/chat.gif)  |
-
- 영상통화          |  
-:-------------------------:|
-![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/webRTC.gif)  |
-
- 스트리밍방송          |  
-:-------------------------:|
-![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/stream.gif)  |
-
 
 
 ## 사용기술
@@ -63,6 +43,25 @@
 - exo-player
 
 
+## 핵심기능
+
+소셜로그인          |  실시간경매
+:-------------------------:|:-------------------------: 
+![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/social_login.gif)  |  ![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/post.gif)
+
+ 채팅          |  
+:-------------------------:|
+![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/chat.gif)  |
+
+ 영상통화          |  
+:-------------------------:|
+![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/webRTC.gif)  |
+
+ 스트리밍방송          |  
+:-------------------------:|
+![Smartphones](https://raw.githubusercontent.com/eunchanboss/live_auction/master/app/src/main/res/img/stream.gif)  |
+
+
 ## 관련 오픈소스
 
 영상통화
@@ -72,6 +71,7 @@
 스트리밍방송
 - https://github.com/ant-media/LiveVideoBroadcaster
 - https://github.com/pedroSG94/rtmp-rtsp-stream-client-java
+ 
  
 ## 참고사항
  
